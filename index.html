@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Slider JS</title>
+    <link rel="stylesheet" href="range-slider.css">
+    <style type="text/css">
+      body {
+        background: #000000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 98vh;
+      }
+      #slider-container {
+        width: 100%;
+        padding: 3%;
+      }
+
+    </style>
+  </head>
+  <body>
+        <div id="slider-container">
+            <div id="slider-bar" class="theme-light" data-max="60" data-min="1" data-precision="2">
+               <input type="range" id="slider-handle-1" class="slider-handles" min="0" max="50" value="0"/>
+               <output for="slider-handle-1" id="slider-output-1"></output>
+               <input type="range" id="slider-handle-2" class="slider-handles" min="0" max="50" value="0"/>
+               <output for="slider-handle-2" id="slider-output-2"></output>
+            </div>
+        </div>
+	<script src="range-slider.js"></script>
+  </body>
+</html>
